@@ -1,9 +1,8 @@
 from concurrent import futures
 import logging
-import sys
 
 import grpc
-sys.path.append("/simple-grpc-web-service-matheuspazesteves")
+import const
 import EmployeeService_pb2
 import EmployeeService_pb2_grpc
 

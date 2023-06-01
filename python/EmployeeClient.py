@@ -1,9 +1,8 @@
 from __future__ import print_function
 import logging
-import sys
+import const
 
 import grpc
-sys.path.append("/simple-grpc-web-service-matheuspazesteves")
 import EmployeeService_pb2
 import EmployeeService_pb2_grpc
 
