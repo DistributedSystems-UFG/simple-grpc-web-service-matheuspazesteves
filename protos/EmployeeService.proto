@@ -18,6 +18,9 @@ service EmployeeService {
   // Update an employee´s title/position
   rpc UpdateEmployeeTitle (EmployeeTitleUpdate) returns (StatusReply) {}
   
+  // Update an employee´s salary
+  rpc UpdateEmployeeSalary (EmployeeSalaryUpdate) returns (StatusReply) {}
+
   // Delete an employee
   rpc DeleteEmployee (EmployeeID) returns (StatusReply) {}
 
