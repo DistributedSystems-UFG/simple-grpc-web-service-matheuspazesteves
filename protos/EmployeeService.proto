@@ -48,6 +48,12 @@ message EmployeeTitleUpdate {
   string title = 2;
 }
 
+message EmployeeSalaryUpdate {
+  uint32 id = 1;
+  string title = 2;
+  string salary = 3;
+}
+
 message EmptyMessage{}
 
 message EmployeeDataList{
