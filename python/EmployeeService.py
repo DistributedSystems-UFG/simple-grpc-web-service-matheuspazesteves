@@ -27,7 +27,8 @@ class EmployeeServer(EmployeeService_pb2_grpc.EmployeeServiceServicer):
     dat = {
     'id':request.id,
     'name':request.name,
-    'title':request.title
+    'title':request.title,
+    'salary':request.salary
     }
     empDB.append(dat)
     return EmployeeService_pb2.StatusReply(status='OK')
