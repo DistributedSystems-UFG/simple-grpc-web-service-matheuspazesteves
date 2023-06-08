@@ -53,7 +53,7 @@ class EmployeeServer(EmployeeService_pb2_grpc.EmployeeServiceServicer):
   def ListAllEmployees(self, request, context):
     list = EmployeeService_pb2.EmployeeDataList()
     for item in empDB:
-      emp_data = EmployeeService_pb2.EmployeeData(id=item['id'], name=item['name'], title=item['title'], title=item[0]['salary']) 
+      emp_data = EmployeeService_pb2.EmployeeData(id=item['id'], name=item['name'], title=item['title'], salary=item[0]['salary']) 
       list.employee_data.append(emp_data)
     return list
 
